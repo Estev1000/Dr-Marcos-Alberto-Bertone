@@ -1261,3 +1261,172 @@ body {
     display: block;
     margin-bottom: 10px;
 }
+
+/* ============================================
+   ODONTOGRAMA — Planilla de Obra Social
+   ============================================ */
+#history-modal .modal-content {
+    max-width: 780px;
+}
+
+.odonto-hint {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+.odonto-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.odonto-sym-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.odonto-sym-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: all 0.15s;
+    min-width: 64px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.odonto-sym-btn svg {
+    width: 30px;
+    height: 30px;
+}
+
+.odonto-sym-btn small {
+    font-size: 0.62rem;
+    color: var(--text-light);
+}
+
+.odonto-sym-btn:hover {
+    border-color: var(--primary-color);
+}
+
+.odonto-sym-btn.active {
+    border-color: var(--primary-color);
+    background: rgba(13, 138, 188, 0.08);
+    box-shadow: 0 0 0 2px rgba(13, 138, 188, 0.15);
+}
+
+.odonto-sym-btn.active small {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.odonto-color-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.odonto-color-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px var(--border-color);
+    cursor: pointer;
+    transition: transform 0.15s;
+    padding: 0;
+}
+
+.odonto-color-btn.active {
+    transform: scale(1.25);
+    box-shadow: 0 0 0 2px var(--secondary-color);
+}
+
+.odonto-tool-group {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.odonto-tool-btn {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: var(--secondary-color);
+    font-family: 'Outfit', sans-serif;
+}
+
+.odonto-tool-btn:hover {
+    border-color: var(--primary-color);
+}
+
+.odonto-tool-btn.active {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.odonto-chart {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 14px 10px;
+    overflow-x: auto;
+}
+
+.odonto-arch {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    padding: 4px 2px;
+}
+
+.odonto-tooth {
+    width: 38px;
+    flex: 0 0 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 2px 0;
+    user-select: none;
+}
+
+.odonto-tooth svg {
+    width: 36px;
+    height: 40px;
+    display: block;
+}
+
+.odonto-shape {
+    fill: #fff;
+    stroke: #4a5568;
+    stroke-width: 1.4;
+}
+
+.odonto-num {
+    font-size: 0.62rem;
+    color: var(--text-light);
+    margin-top: 1px;
+}
+
+.odonto-tooth:hover {
+    background: rgba(13, 138, 188, 0.06);
+}
+
+.odonto-tooth:hover .odonto-shape {
+    stroke: var(--primary-color);
+}

@@ -392,6 +392,20 @@
                     <label>Observaciones</label>
                     <textarea id="h-notes" rows="2"></textarea>
                 </div>
+                <!-- Odontograma: Planilla de Obra Social -->
+                <div class="form-group">
+                    <label><i class='bx bxs-color-fill'></i> Odontograma (Planilla Obra Social)</label>
+                    <p class="odonto-hint">
+                        Elegí un símbolo y un color (Rojo = por realizar, Azul = realizado) y tocá la muela para
+                        marcarla. Usá "Borrar" para quitar marcas.
+                    </p>
+                    <div class="odonto-toolbar">
+                        <div class="odonto-sym-group" id="odonto-sym-group"></div>
+                        <div class="odonto-color-group" id="odonto-color-group"></div>
+                        <div class="odonto-tool-group" id="odonto-tool-group"></div>
+                    </div>
+                    <div class="odonto-chart" id="odonto-chart"></div>
+                </div>
                 <!-- Sistema de Fotos de Precisión -->
                 <div class="form-group">
                     <label><i class='bx bx-camera'></i> Fotos del Tratamiento (Posiciones 1, 2 y 3)</label>
@@ -471,7 +485,7 @@
         </div>
     </div>
 
-    <script src="app.min.js?v=2"></script>
+    <script src="app.min.js?v=3"></script>
 </body>
 
 </html>
