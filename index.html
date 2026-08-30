@@ -372,7 +372,7 @@
                     <label>Paciente</label>
                     <input type="text" id="h-patient-search" placeholder="Buscar por nombre, apellido o teléfono..." oninput="filterHistoryPatients()">
                     <div id="h-patient-results" class="select-results" style="display:none;"></div>
-                    <select id="h-patient" required>
+                    <select id="h-patient" required onchange="historyPatientChanged()">
                         <!-- Populated by JS -->
                     </select>
                 </div>
@@ -485,7 +485,7 @@
         </div>
     </div>
 
-    <script src="app.min.js?v=3"></script>
+    <script src="app.min.js?v=4"></script>
 </body>
 
 </html>
